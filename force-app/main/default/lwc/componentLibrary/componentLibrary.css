@@ -1,0 +1,57 @@
+/* --------------- layout --------------- */
+.container {
+    /* background-color: gray; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    /* min-height: 100vh; */
+}
+.nav__container {
+    min-width: 200px;
+    min-height: calc(100vh - 5.5rem);
+    padding: 1em;
+    background-color: rgb(250, 250, 249);
+}
+.content__container {
+    background-color: rgb(234, 245, 254);
+    padding: 1em;
+    width: 100%;
+    min-height: calc(100vh - 5.5rem);
+}
+/* --------------- layout --------------- */
+
+
+/* --------------- Nav --------------- */
+.nav__container {}
+.nav__title {
+    padding: 1em 0;
+}
+.nav__title h2 { 
+    font-size: 1em;
+    line-height: 1.25;
+}
+.nav__list--wrapper {}
+.nav__list {}
+.nav__list--item {}
+.nav__list--item.active {
+    background: rgba(21,137,238,.1);
+    -webkit-box-shadow: #1b96ff 4px 0 0 inset;
+    box-shadow: #1b96ff 4px 0 0 inset;
+}
+
+.nav__list--item button {
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    text-align: left;
+    padding-left: 2em;
+    padding: .5em 0 .5em 2em;
+    font-size: 1.2em;
+    font-weight: 600;
+    transition: .4s all;
+}
+.nav__list--item button:hover {
+    background-color: #f3f2f2;
+}
+/* --------------- Nav --------------- */
+

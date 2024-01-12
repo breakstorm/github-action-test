@@ -1,0 +1,46 @@
+<template>
+    <div class="container">
+        <div class="nav__container">
+            <div class="nav__search--wrapper">
+                <input type="search" placeholder="Quick Find">
+            </div>
+            <div class="nav__title">
+                <h2>습작 컴포넌트 라이브러리</h2>
+            </div>
+            <div class="nav__list--wrapper">
+                <ul class="nav__list">
+                    <li class="nav__list--item"><button type="button" onclick={clickInput}><span>Input</span></button></li>
+                    <li class="nav__list--item"><button type="button" onclick={clickSelect}><span>Select</span></button></li>
+                    <li class="nav__list--item"><button type="button" onclick={clickCheck}><span>Check</span></button></li>
+                    <li class="nav__list--item"><button type="button" onclick={clickRadio}><span>Radio</span></button></li>
+                </ul>
+                <div>
+                    {text}
+                </div>
+            </div>
+        </div>
+        <div class="content__container">
+            <div class="result" lwc:if={componentConstructor}>
+                <lwc:component lwc:is={componentConstructor}></lwc:component>
+            </div>
+            <div lwc:else>
+                컴포넌트를 선택해 주세요.
+            </div>
+
+            <!-- 
+                1. 처음에는 아무것도 선택되지 않은 상태 
+                2. 선택하였는데 데이터가 없는 상태 
+                3. 데이터 호출 상태
+             -->
+
+            <!-- 동적 컴포넌트 호출 -->
+
+            <!-- <div class="test">
+                <button onclick={dy1}>dy1</button><button onclick={dy2}>dy2</button>
+            </div>
+            <div class="result">
+                <lwc:component lwc:is={componentConstructor}></lwc:component>
+            </div> -->
+        </div>
+    </div>
+</template>
