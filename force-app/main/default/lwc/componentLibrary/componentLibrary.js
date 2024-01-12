@@ -21,7 +21,7 @@ export default class ComponentLibrary extends LightningElement {
     
     activeReset(event) {
         // console.log('activeReset', event)
-        console.log('activeReset')
+        console.log('activeReset Deploy master branch to production org')
         this.template.querySelectorAll('.nav__list--item').forEach(v => {
             v.classList.remove('active')
         })
